@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* .container {
+  background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+  background-image: url(../../public/bg/noise.svg);
+  height: 100vh;
+  width: 100%;
+} */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@import "tailwindcss/base";
+
+@layer base {
+  html {
+    @apply h-full w-full bg-repeat text-neutral-900 antialiased bg-blend-hard-light;
+    color-scheme: light;
+    background-image: url("../../public/bg/noise.png");
+    background-color: hsl(0, 0%, 93%);
+    /* background-color: rgb(231, 231, 231); */
+    /* opacity: 0.6; */
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  body {
+    @apply h-full w-full;
+  }
+
+  #__next {
+    @apply h-full w-full;
+  }
 }
