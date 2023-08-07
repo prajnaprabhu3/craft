@@ -10,15 +10,12 @@
 } */
 
 @import "tailwindcss/base";
-
+/* 
 @layer base {
   html {
     @apply h-full w-full bg-repeat text-neutral-900 antialiased bg-blend-hard-light;
     color-scheme: light;
     background-image: url("../../public/bg/noise.png");
-    background-color: hsl(0, 0%, 93%);
-    /* background-color: rgb(231, 231, 231); */
-    /* opacity: 0.6; */
   }
 
   body {
@@ -28,4 +25,14 @@
   #__next {
     @apply h-full w-full;
   }
+} */
+
+::-moz-selection {
+  @apply bg-[#ffd8e0];
+}
+
+::-webkit-selection,
+::selection {
+  @apply bg-[#ffd8e0] text-[#232323];
+  /* color: rgb(35, 35, 35); */
 }
