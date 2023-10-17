@@ -1,8 +1,26 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
+import { Cabin } from "next/font/google";
+import { Manrope } from "next/font/google";
 
-const inter = Inter({ subsets: ["cyrillic"] });
+const inter = Inter({ subsets: ["latin"] });
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const cabin = Cabin({
+  subsets: ["vietnamese"],
+  weight: ["400"],
+});
+
+const manrope = Manrope({
+  subsets: ["vietnamese"],
+  // weight: ["400"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
