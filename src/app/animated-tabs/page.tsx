@@ -1,6 +1,6 @@
 "use client";
 
-import CraftContainer from "../ui/craft-container";
+import CraftContainer from "./components/craft-container";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
@@ -28,7 +28,7 @@ const AnimatedTabs = () => {
           <p className="text-sm text-gray-500 mt-1">30 March 2023</p>
         </div>
 
-        <p className="text-md">
+        <p className="text-sm">
           From Stripe’s wonderful blog. Uses Web Animations API. The trick is to
           duplicate the tab list, one in default styling, one with active
           styling, and use clip path to show the active indicator. This way, you

@@ -7,22 +7,22 @@ export const craftData = [
     img: img,
     href: "animated-tabs",
   },
-  {
-    id: 1,
-    title: "Animated Navigatio",
-    img: img,
-    href: "animated-tabs",
-  },
-  {
-    id: 1,
-    title: "Animated Navigatio",
-    img: img,
-    href: "animated-tabs",
-  },
-  {
-    id: 1,
-    title: "Animated Navigatio",
-    img: img,
-    href: "animated-tabs",
-  },
+  // {
+  //   id: 1,
+  //   title: "Animated Navigatio",
+  //   img: img,
+  //   href: "animated-tabs",
+  // },
+  // {
+  //   id: 1,
+  //   title: "Animated Navigatio",
+  //   img: img,
+  //   href: "animated-tabs",
+  // },
+  // {
+  //   id: 1,
+  //   title: "Animated Navigatio",
+  //   img: img,
+  //   href: "animated-tabs",
+  // },
 ];

@@ -1,4 +1,4 @@
-import { CraftPreviewI } from "@/app/types/CraftPreviewI";
+import { CraftPreviewI } from "@/types/CraftPreviewI";
 import Image from "next/image";
 import Link from "next/link";
 
