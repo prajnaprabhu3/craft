@@ -3,6 +3,8 @@
 import CraftContainer from "./components/craft-container";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { CornerUpLeft } from "lucide-react";
+import Link from "next/link";
 
 const tabs = [
   { id: "home", label: "Home", path: "/" },
@@ -22,20 +24,20 @@ const AnimatedTabs = () => {
 
   return (
     <div className="w-ful">
-      <div className=" h-screen first:flex flex-col justify-center gap-10 mx-auto w-1/2 -mt-8">
+      <div className="h-screen flex flex-col justify-center gap-10 mx-auto w-1/2 -mt-8">
+        <Link href='/' className="flex items-center gap-1.5 text-sm text-gray-500 cursor-pointer">
+          <CornerUpLeft size={14}/>
+          <p>back</p>
+        </Link>
+
         <div>
           <h3 className="text-md font-medium">Animated Tabs</h3>
-          <p className="text-sm text-gray-500 mt-1">30 March 2023</p>
+          <p className="text-xs text-gray-500 mt-1">30 March 2023</p>
         </div>
 
-        <p className="text-sm">
-          From Stripe’s wonderful blog. Uses Web Animations API. The trick is to
-          duplicate the tab list, one in default styling, one with active
-          styling, and use clip path to show the active indicator. This way, you
-          can use any colors you want without relying on solutions that use
-          mix-blend-mode. Make sure to mark the duplicate items with
-          aria-hidden.
-        </p>
+        {/* <p className="text-sm">
+        some text of what this is and inspired by
+        </p> */}
 
         <CraftContainer>
           <div className="hidden  md:flex lg:flex sticky bottom-0 space-x-1.5 w-96 rounded-full py-1.5 px-2    backdrop-filter backdrop-blur-xl ">
@@ -98,3 +100,4 @@ export default AnimatedTabs;
   </div>
 </CraftContainer>; */
 }
+

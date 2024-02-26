@@ -1,4 +1,4 @@
-import { FiGithub, FiTwitter } from "react-icons/fi";
+import { Github,Twitter } from "lucide-react";
 import Image from "next/image";
 
 import { contactLinks } from "@/constants/costants";
@@ -6,12 +6,12 @@ import { contactLinks } from "@/constants/costants";
 const social = [
   {
     id: "twitter",
-    logo: <FiTwitter className="text-base md:text-md font-black" />,
+    logo: <Twitter size={18} strokeWidth={1.8} />,
     href: contactLinks.twitter,
   },
   {
     id: "github",
-    logo: <FiGithub className="text-base md:text-md font-black" />,
+    logo: <Github size={18} strokeWidth={1.8} />,
     href: contactLinks.github,
   },
 ];
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
         <div className="font-semibold text-lg">craft.</div>
         {/* <Image src="/logo.png" alt="logo" height="40" width="40" /> */}
 
-        <div className="flex gap-3">
+        <div className="flex gap-2.5">
           {social.map((item) => (
             <a
               href={item.href}
